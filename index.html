@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Lunching: Simply Network</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -44,6 +44,11 @@
       /* All form factors */
 
       /* Main body and headings */
+      .transparent {
+        opacity:0.80;
+        filter:alpha(opacity=80);
+      }
+
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
@@ -104,7 +109,7 @@
 
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top transparent">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar"
@@ -113,13 +118,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+          <a class="brand" href="#">Lunching</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li class="active"><a href="#">About</a></li>
+              <!--<li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
-            </ul>
+              -->
+	    </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -134,23 +140,24 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>Lunching</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">Build Your Network, Over Lunch.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
+        
+	<!--<div class="span5 offset1 video">
           <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
-
+	-->
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
+        <div class="span10 offset1 actions">
           <div class="span8 offset2">
             <div class="statistics">
               <div class="span4">
@@ -158,40 +165,43 @@
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                <h3>2</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$2000</h3> <p>of $50,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                <h3>29</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="span10 offset1">
+          <div class="span9 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="progress progress-striped">
+		<div class="bar bar-success" style="width: 5%;"></div>
+		<div class="bar active" style="width: 95%;"></div>
+	      </div>
             </div>
           </div>
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
+            <button class="btn btn-success btn-large">Sign Up for the Beta</button>
           </div>
-          <div class="span8 offset2 social">
+<!--          <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons --
+		 <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div>
+    
+	  </div> end social -->
         </div>
       </div>
 
@@ -203,30 +213,23 @@
         <div class="span5 offset1 asset">
           <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
-        <div class="span5 copy">
-          <p>
-           In facilisis scelerisqu turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+        <div class="span8 copy">
+          <h3>Network simply</h3>
+	  <p>
+            It's simple, pick one or more people to go to lunch, pick a place, and pick a time.  
           </p>
         </div>
       </div>
 
       <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. 
+        <div class="span8 offset1 copy copy-right">
+           <h3>Never eat alone, build your network</h3>
+	    <p>
+	      While your co-workers are eating by themselves at their desk, you can be building your network.  
           </p>
         </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+        <div class="span3 asset">
+          <img class="img-simple" style="height:150px;" src="http://i.imgur.com/nPUsxmw.png?1">
         </div>
       </div>
 
@@ -241,25 +244,25 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    Why should I join?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
+                    Lunching is the quickest way to expand your network, knowledge, and influence.  
+                 </div>
                 </div>
               </div>
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
+		    Who do I lunch with?
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    You can choose to lunch with those in your existing network <em>or</em> build your network with specific professionals in your areas of interest!
                   </div>
                 </div>
               </div>
@@ -268,14 +271,10 @@
 
       </div>
 
-      <!-- http://creativecommons.org/licenses/ -->
+      <!-- http://creativecommons.org/licenses/ --> 
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+          <p>This concept is currently being developed by Richard Dulude as part of Stanford University's "Startup Engineering" course on Coursera</p>
         </div>
       </div>
     </div>
