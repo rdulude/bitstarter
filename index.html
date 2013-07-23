@@ -93,6 +93,16 @@
       .asset {
         padding: 2.5% 0%;
       }
+
+      .circular {
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      background: url(http://link-to-your/image.jpg) no-repeat;
+      }
+
       .footer {
         color: #cccccc;
         text-align: center;
@@ -210,15 +220,18 @@
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-        <div class="span8 copy">
+
+
+        <div class="span8 offset1 copy copy-right">
           <h3>Network simply</h3>
-	  <p>
-            It's simple, pick one or more people to go to lunch, pick a place, and pick a time.  
-          </p>
+	   <p>
+            It's simple, pick one or more people to go to lunch, pick a place, and pick a time. Friends or professionals, share great conversation with people over lunch</p>
+        </div> 
+	
+	<div class="span3 asset">
+          <img class="circular" style="height:150px;" src="http://bit.ly/162gjxh">
         </div>
+
       </div>
 
       <div class="row-fluid section2">
@@ -229,7 +242,7 @@
           </p>
         </div>
         <div class="span3 asset">
-          <img class="img-simple" style="height:150px;" src="http://i.imgur.com/nPUsxmw.png?1">
+          <img class="img-simple" style="height:150px;" src="http://i.imgur.com/nPUsxmw.png?1"> 
         </div>
       </div>
 
